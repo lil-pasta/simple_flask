@@ -1,0 +1,45 @@
+2021-08-23 23:29:10,574 ERROR: Exception on /concat [POST] [in /home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/sh/Dev/python/simple_flask/app/functions/routes.py", line 13, in concat
+    return redirect(url_for('error.404'))
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'error.404'. Did you mean 'functions.concat' instead?
+2021-08-24 00:07:01,978 ERROR: Exception on /index [POST] [in /home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/sh/Dev/python/simple_flask/app/main/routes.py", line 15, in index
+    if form.validate_on_submit() or request.method == 'POST':
+NameError: name 'request' is not defined
+2021-08-24 00:07:01,978 ERROR: Exception on /index [POST] [in /home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/sh/Dev/python/simple_flask/app/main/routes.py", line 15, in index
+    if form.validate_on_submit() or request.method == 'POST':
+NameError: name 'request' is not defined

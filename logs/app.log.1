@@ -1,0 +1,119 @@
+2021-08-23 22:50:13,071 ERROR: Exception on /concat [POST] [in /home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: concat() missing 1 required positional argument: 'words'
+2021-08-23 22:50:13,071 ERROR: Exception on /concat [POST] [in /home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: concat() missing 1 required positional argument: 'words'
+2021-08-23 22:53:22,445 ERROR: Exception on /index [GET] [in /home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/sh/Dev/python/simple_flask/app/main/routes.py", line 18, in index
+    return render_template('main/index.html')
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/sh/Dev/python/simple_flask/app/templates/main/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/sh/Dev/python/simple_flask/app/templates/base.html", line 12, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/sh/Dev/python/simple_flask/app/templates/main/index.html", line 6, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/jinja2/environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2021-08-23 22:53:47,033 ERROR: Exception on /index [GET] [in /home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/sh/Dev/python/simple_flask/app/main/routes.py", line 18, in index
+    return render_template('main/index.html')
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/sh/Dev/python/simple_flask/app/templates/main/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/sh/Dev/python/simple_flask/app/templates/base.html", line 12, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/sh/Dev/python/simple_flask/app/templates/main/index.html", line 6, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/jinja2/environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2021-08-23 23:28:05,170 ERROR: Exception on /concat [POST] [in /home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/sh/Dev/python/simple_flask/app/functions/routes.py", line 9, in concat
+    if 'word_one' in session and 'word_two' in session:
+NameError: name 'session' is not defined
+2021-08-23 23:28:27,464 ERROR: Exception on /concat [POST] [in /home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/sh/Dev/python/simple_flask/app/functions/routes.py", line 13, in concat
+    return redirect(url_for('error.404'))
+NameError: name 'redirect' is not defined
+2021-08-23 23:28:56,750 ERROR: Exception on /concat [POST] [in /home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sh/.virtualenvs/simple_flask/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/sh/Dev/python/simple_flask/app/functions/routes.py", line 13, in concat
+    return redirect(url_for('error.404'))
+NameError: name 'url_for' is not defined

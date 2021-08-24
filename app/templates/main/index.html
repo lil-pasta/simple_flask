@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hello, Stranger</h1>
+    <form method='post' enctype='multipart/form-data'>
+        {{ form.hidden_tag() }}
+        {{ form.word_one }}
+        {{ form.word_two }}
+        {{ form.submit() }}
+    </form>
+{% endblock %}
